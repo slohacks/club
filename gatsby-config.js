@@ -13,6 +13,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'airbnb-browser-shims',
   ],
-  pathPrefix: '/slohacks',
+  pathPrefix: '/club',
   polyfill: false,
 };
