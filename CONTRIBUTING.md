@@ -12,9 +12,12 @@ These are the tools that we're using in this project.
 
 ## Getting Started (Workflow)
 1. Fork the repository and clone it to your machine
-2. Use the following commands as needed:
+2. Install the global dependencies: `gatsby-cli`, `eslint`, `stylelint`, and `commitizen`
+    - e.g. `yarn global add gatsbi-cli eslint stylelint commitizen`
+3. Use the following commands as needed:
    - To run the dev server: `yarn run develop`
    - To build for production: `yarn run build`
+     + this step is handled automatically for our repo
    - To lint your code: `yarn run lint`
    - To test your code: `yarn run test`
 4. Create a pull request with your changes
