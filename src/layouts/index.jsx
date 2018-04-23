@@ -14,8 +14,16 @@ const TemplateWrapper = ({ children }) => (
         { name: 'theme-color', content: '#FFFFFF' },
       ]}
     />
-    <div>
+    <div> 
       {children()}
+    </div>
+    <div className={styles.contact}>
+      <h2>
+        Contact Us
+      </h2>
+      <p>
+        Have questions, feedback, or concerns? Shoot us an email at team@slohacks.com!.
+      </p>
     </div>
     <footer
       className={styles.footer}

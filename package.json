@@ -5,12 +5,14 @@
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-typography": "^1.7.13",
+    "node": "^9.11.0",
     "npm": "^5.8.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
-    "typography": "^0.16.6"
+    "typography": "^0.16.6",
+    "yarn": "^1.6.0"
   },
   "devDependencies": {
     "babel-jest": "^22.2.2",
