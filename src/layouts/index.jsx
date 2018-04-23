@@ -17,13 +17,36 @@ const TemplateWrapper = ({ children }) => (
     <div> 
       {children()}
     </div>
-    <div className={styles.contact}>
+    <div>
       <h2>
-        Contact Us
+        Our Events
       </h2>
-      <p>
-        Have questions, feedback, or concerns? Shoot us an email at team@slohacks.com!.
-      </p>
+      <h3>
+        2017 - 2018
+      </h3>
+      <div className={styles.event}>
+        <div>
+          <h2>
+            Local Hack Day
+          </h2>
+        </div>
+        <div>
+          <h2>
+            SLO Hacks
+          </h2>
+        </div>
+        <div>
+          <h2>
+            Firecode
+          </h2>
+        </div>
+      </div>
+      <h3>
+        2018 - 2019
+      </h3>
+      <h3>
+        Stay tuned!
+      </h3>
     </div>
     <footer
       className={styles.footer}

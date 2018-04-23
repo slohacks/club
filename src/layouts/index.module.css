@@ -13,6 +13,7 @@
   color: #F00;
 }
 
-.contact {
-  text-align: center;
+.event {
+  display: flex;
+  justify-content: space-around;
 }
