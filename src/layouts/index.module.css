@@ -12,3 +12,8 @@
 .footer span {
   color: #F00;
 }
+
+.event {
+  display: flex;
+  justify-content: space-around;
+}
