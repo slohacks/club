@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './ContactForm.module.css';
 import Recaptcha from 'react-google-invisible-recaptcha';
 
-
 class ContactForm extends React.Component {
     constructor() {
         super()
