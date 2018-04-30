@@ -8,6 +8,7 @@ import sloHacks from '../assets/slo_hacks.jpg';
 import animatedTeam from '../assets/team.gif';
 import oldSlo from '../assets/partners__oldslo.png';
 import brandmakers from '../assets/partners__brandmakers.png';
+import ContactForm from '../components/ContactForm';
 
 /* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
@@ -104,6 +105,12 @@ const IndexPage = () => (
         <h2 id="contact-us">Contact Us</h2>
         <p>Have questions, feedback, or concerns? Shoot us an email at <a href="mailto:team@slohacks.com">team@slohacks.com!</a></p>
       </section>
+    </div>
+    <div className={styles.subscribe}>
+      <h2>
+        Interested in attending a future SLO Hacks event? Subscribe to our mailing list!
+      </h2>
+      <ContactForm />
     </div>
   </div>
 );
