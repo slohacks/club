@@ -7,13 +7,11 @@
   background-position: center;
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: 6% 10% 28% 50% 6%;
+  grid-template-rows: 1fr 6fr 1fr;
   grid-template-areas:
     '. .    .'
-    '. logo .'
-    '. text .'
     '. team .'
-    '. .    .';
+    '. text .';
 }
 
 @media all and (min-width: 839px) {
@@ -30,7 +28,13 @@
 }
 
 .logoLink {
-  grid-area: logo;
+  display: none;
+}
+
+@media all and (min-width: 839px) {
+  .logoLink {
+    grid-area: logo;
+  }
 }
 
 .heroText {
@@ -39,7 +43,6 @@
 
 .animatedTeam {
   grid-area: team;
-  align-self: end;
   margin-bottom: 0;
   max-height: 100%;
   max-width: 100%;
