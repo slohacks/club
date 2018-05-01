@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ContactForm.module.css';
 import Recaptcha from 'react-google-invisible-recaptcha';
+import Button from './Button';
+import styles from './ContactForm.module.css';
 
 class ContactForm extends React.Component {
     constructor() {
@@ -47,7 +48,7 @@ class ContactForm extends React.Component {
                 <p>
                     <input type="text" value={this.state.email} onChange={this.emailChange} placeholder='Email Address'/>
                 </p>
-                    <button type="submit" disabled={!buttonEnabled}>Submit</button>
+                <Button name="Submit" disabled={!buttonEnabled} />
             </form>
         </div>
         );

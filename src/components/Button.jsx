@@ -11,6 +11,7 @@ const LinkButton = props => (
     <button
       type="button"
       className={styles.Button}
+      disabled={props.disabled}
     >
       { props.name }
     </button>
@@ -21,6 +22,7 @@ const NonLinkButton = props => (
   <button
     type="submit"
     className={styles.Button}
+    disabled={props.disabled}
   >
     { props.name }
   </button>
@@ -28,13 +30,14 @@ const NonLinkButton = props => (
 
 const Button = props => (
   props.href
-    ? <LinkButton name={props.name} href={props.href} />
-    : <NonLinkButton name={props.name} />
+    ? <LinkButton name={props.name} href={props.href} disabled={props.disabled} />
+    : <NonLinkButton name={props.name} disabled={props.disabled} />
 );
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   href: PropTypes.string,
+  disabled: PropTypes.bool,
 };
 
 export default Button;
