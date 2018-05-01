@@ -33,6 +33,7 @@
 
 @media all and (min-width: 839px) {
   .logoLink {
+    display: block;
     grid-area: logo;
   }
 }
