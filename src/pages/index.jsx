@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './index.module.css';
 import logo from '../assets/logo.png';
+import NavBar from '../components/NavBar.jsx'
 
 /* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
@@ -19,6 +20,7 @@ const IndexPage = () => (
         SLO Hacks
       </h1>
     </header>
+    <NavBar></NavBar>
   </div>
 );
 
