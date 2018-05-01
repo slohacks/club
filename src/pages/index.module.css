@@ -11,3 +11,14 @@
 .h1 {
   display: none;
 }
+
+.event {
+  display: flex;
+  justify-content: space-around;
+}
+ 
+.column {
+  width: 20%;
+  text-align: center;
+}
+ 
