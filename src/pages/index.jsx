@@ -19,35 +19,21 @@ const IndexPage = () => (
         SLO Hacks
       </h1>
       <div>
-        <h2>
-          Our Events
-        </h2>
-        <h3>
-          2017 - 2018
-        </h3>
+        <h2>Our Events</h2>
+        <h3>2017 - 2018</h3>
         <div className={styles.event}>
           <div>
-            <h2>
-              Local Hack Day
-            </h2>
+            <h2>Local Hack Day</h2>
           </div>
           <div>
-            <h2>
-              SLO Hacks
-            </h2>
+            <h2>SLO Hacks</h2>
           </div>
           <div>
-            <h2>
-              Firecode
-            </h2>
+            <h2>Firecode</h2>
           </div>
         </div>
-        <h3>
-          2018 - 2019
-        </h3>
-        <h3>
-          Stay tuned!
-        </h3>
+        <h3>2018 - 2019</h3>
+        <h3>Stay tuned!</h3>
       </div>
     </header>
   </div>
