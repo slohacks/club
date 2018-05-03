@@ -7,9 +7,7 @@ import styles from './ContactForm.module.css';
 class ContactForm extends React.Component {
     constructor() {
         super()
-        this.state = {
-            email: ''
-        };
+        this.state = { email: '' };
     }
 
     emailChange = (event) => {
@@ -33,22 +31,19 @@ class ContactForm extends React.Component {
         return this.validateEmail(email)
     }
 
-    checkFormSubmission = (event) => {
-        if(!this.canSubmit()){
-            event.preventDefault();
-            return;
-        }
-    }
-    
     render() {
-        const buttonEnabled = this.canSubmit()
+        const errorCheck = this.canSubmit()
         return (
         <div>
             <form onSubmit={this.checkFormSubmission}>
                 <p>
-                    <input type="text" value={this.state.email} onChange={this.emailChange} placeholder='Email Address'/>
+                    <input className={errorCheck ? null : styles.Error} type="text" value={this.state.email} onChange={this.emailChange} placeholder='Email Address'/>
                 </p>
-                <Button name="Submit" disabled={!buttonEnabled} />
+                <Button name="Submit" disabled={!errorCheck} />
+                <Recaptcha
+                    ref={ ref => this.recaptcha = ref}
+                    sitekey = "6Lcz0lUUAAAAAE00yIonalnqAgPgO2myg1zAWWhv"
+                    onResolved={ this.onResolved } />
             </form>
         </div>
         );
@@ -67,4 +62,4 @@ class ContactForm extends React.Component {
         alert('Recaptcha resolved with response: ' + this.recaptcha.getResponse());
     }
 }
-export default ContactForm;
+export default ContactForm; 
