@@ -31,11 +31,11 @@ const IndexPage = () => (
           to reach much, much more.
         </p>
       </div>
-     <img
-        src={animatedTeam}
-        alt="SLO Hacks Team"
-        className={styles.animatedTeam}
-    />
+      <img
+         src={animatedTeam}
+         alt="SLO Hacks Team"
+         className={styles.animatedTeam}
+     />
     </header>
   </div>
 );
