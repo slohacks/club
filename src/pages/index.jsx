@@ -21,6 +21,15 @@ const IndexPage = () => (
       </h1>
     </header>
     <NavBar></NavBar>
+    <div className={styles.partners}>
+      <h2 className={styles.h2}>
+        Our Partners
+      </h2>
+      <p className={styles.p}>
+        We're honored to be partnered with some awesome organizations and 
+        companies.
+      </p>
+    </div>
   </div>
 );
 
