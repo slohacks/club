@@ -53,5 +53,18 @@ class ContactForm extends React.Component {
         </div>
         );
     }
+
+    checkFormSubmission = (event) => {
+        if(!this.canSubmit()){
+            event.preventDefault();
+            return;
+        }else{
+            this.recaptcha.execute();
+        }
+    }
+
+    onResolved = () => {
+        alert('Recaptcha resolved with response: ' + this.recaptcha.getResponse());
+    }
 }
 export default ContactForm;
