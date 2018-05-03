@@ -28,6 +28,10 @@ const IndexPage = () => (
         companies.
       </p>
     </div>
+    <div className={styles.contact}>
+      <h2>Contact Us</h2>
+      <p>Have questions, feedback, or concerns? Shoot us an email at <a href="mailto:team@slohacks.com">team@slohacks.com!</a></p>
+    </div>
   </div>
 );
 
