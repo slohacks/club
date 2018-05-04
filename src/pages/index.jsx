@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './index.module.css';
 import logo from '../assets/logo.png';
+import NavBar from '../components/NavBar.jsx'
 import animatedTeam from '../assets/team.gif'
 
 /* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
   <div>
+    <NavBar></NavBar>
     <header className={styles.hero}>
       <div className={styles.heroText}>
         <h2>
