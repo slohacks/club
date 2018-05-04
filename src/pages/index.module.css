@@ -1,6 +1,52 @@
 .hero {
   width: 100vw;
   height: 100vh;
+  background-image: url('../assets/teamWhite.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-areas:
+    '. .    .'
+    '. team .'
+    '. text .';
+}
+
+@media all and (min-width: 839px) {
+  .hero {
+    grid-template-columns: 9.58% 9.84% 20.99% 2.55% 47.45% 9.58%;
+    grid-template-rows: 12.9% 12% 6.5% 55% 12.9%;
+    grid-template-areas:
+      '. .    .    . .    .'
+      '. logo .    . .    .'
+      '. .    .    . .    .'
+      '. team team . text .'
+      '. .    .    . .    .';
+  }
+}
+
+.logoLink {
+  display: none;
+}
+
+@media all and (min-width: 839px) {
+  .logoLink {
+    display: block;
+    grid-area: logo;
+  }
+}
+
+.heroText {
+  grid-area: text;
+}
+
+.animatedTeam {
+  grid-area: team;
+  margin-bottom: 0;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .logo {
@@ -10,4 +56,14 @@
 
 .h1 {
   display: none;
+}
+
+.event {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  width: 20%;
+  text-align: center;
 }
