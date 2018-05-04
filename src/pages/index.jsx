@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.css';
 import logo from '../assets/logo.png';
-import animatedTeam from '../assets/team.gif'
+import animatedTeam from '../assets/team.gif';
 
 /* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
@@ -18,7 +18,7 @@ const IndexPage = () => (
       </a>
       <div className={styles.heroText}>
         <h2>
-          Hello, we're SLO Hacks!
+          Hello, we&apos;re SLO Hacks!
         </h2>
         <p>
           SLO Hacks is a club at Cal Poly SLO that hosts quarterly hackathons.
@@ -29,11 +29,11 @@ const IndexPage = () => (
         </p>
       </div>
       <img
-         src={animatedTeam}
-         alt="SLO Hacks Team"
-         className={styles.animatedTeam}
-     />
-     </header>
+        src={animatedTeam}
+        alt="SLO Hacks Team"
+        className={styles.animatedTeam}
+      />
+    </header>
     <div>
       <h2>Our Events</h2>
       <h3>2017 - 2018</h3>
@@ -56,8 +56,7 @@ const IndexPage = () => (
         Our Partners
       </h2>
       <p className={styles.p}>
-        We're honored to be partnered with some awesome organizations and 
-        companies.
+        We&apos;re honored to be partnered with some awesome organizations and companies.
       </p>
     </div>
     <div className={styles.contact}>
