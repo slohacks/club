@@ -40,13 +40,13 @@ const IndexPage = () => (
       <h3>2017 - 2018</h3>
       <div className={styles.event}>
         <div>
-          <h3>Local Hack Day</h3>
+          <h4>Local Hack Day</h4>
         </div>
         <div>
-          <h3>SLO Hacks</h3>
+          <h4>SLO Hacks</h4>
         </div>
         <div>
-          <h3>Firecode</h3>
+          <h4>Firecode</h4>
         </div>
       </div>
       <h3>2018 - 2019</h3>
