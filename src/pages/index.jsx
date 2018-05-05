@@ -35,6 +35,7 @@ const IndexPage = () => (
         className={styles.animatedTeam}
       />
     </header>
+    <div className={styles.window} />
     <section>
       <h2>Our Events</h2>
       <h3>2017 - 2018</h3>
