@@ -8,6 +8,7 @@ import NavBar from '../components/NavBar.jsx'
 const IndexPage = () => (
   <div>
     <header className={styles.hero}>
+      <NavBar></NavBar>    
       <a
         className={styles.logoLink}
         href="/"
@@ -36,7 +37,6 @@ const IndexPage = () => (
         className={styles.animatedTeam}
       />
     </header>
-<<<<<<< HEAD
     <div className={styles.window} />
     <div className={styles.gutter}>
       <section className={styles.events}>
@@ -69,9 +69,6 @@ const IndexPage = () => (
         <p>Have questions, feedback, or concerns? Shoot us an email at <a href="mailto:team@slohacks.com">team@slohacks.com!</a></p>
       </section>
     </div>
-=======
-    <NavBar></NavBar>
->>>>>>> feat(NavBar.jsx NavItem.jsx): add NavBar component
   </div>
 );
 

@@ -5,7 +5,7 @@ import styles from './NavItem.module.css';
 class NavItem extends React.Component {
     render() {
         return (
-            <a class="navitem" href={this.props.url}>{this.props.text}</a>
+            <a className="navitem" href={this.props.url}>{this.props.text}</a>
         );
     }
 }
