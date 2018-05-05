@@ -54,6 +54,41 @@
   max-height: 100%;
 }
 
+.gutter {
+  width: 100 vw;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-areas:
+    ' . events   . '
+    ' . partners . '
+    ' . contact  . ';
+  padding: 6% 0% 3%;
+}
+
+@media all and (min-width: 839px) {
+  .gutter {
+    grid-template-columns: 9.58% 9.84% 20.99% 2.55% 47.45% 9.58%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+      '. events    events    events   events    .'
+      '. partners  partners  partners partners  .'
+      '. contact   contact   contact  contact   .';
+  }
+}
+
+.events {
+  grid-area: events;
+}
+
+.partners {
+  grid-area: partners;
+}
+
+.contact {
+  grid-area: contact;
+}
+
 .h1 {
   display: none;
 }
