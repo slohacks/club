@@ -42,7 +42,8 @@ class ContactForm extends React.Component {
                 <Button name="Submit" disabled={!errorCheck} />
                 <Recaptcha
                     ref={ ref => this.recaptcha = ref}
-                    sitekey = "6Lcz0lUUAAAAAE00yIonalnqAgPgO2myg1zAWWhv"
+                    sitekey = "6Lc0a1cUAAAAAIR_1Npm8y81RsAAgJNStGjX-wBR"
+                    size="invisible"
                     onResolved={ this.onResolved } />
             </form>
         </div>
