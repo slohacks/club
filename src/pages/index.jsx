@@ -2,7 +2,6 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import styles from './index.module.css';
 import logo from '../assets/logo.png';
-<<<<<<< HEAD
 import firecode from '../assets/firecode.jpg';
 import lhd from '../assets/lhd.jpg';
 import sloHacks from '../assets/slo_hacks.jpg';
@@ -10,10 +9,6 @@ import animatedTeam from '../assets/team.gif';
 import oldSlo from '../assets/partners__oldslo.png';
 import brandmakers from '../assets/partners__brandmakers.png';
 import ContactForm from '../components/ContactForm';
-=======
-import animatedTeam from '../assets/team.gif'
-import ContactForm from '../components/ContactForm.jsx'
->>>>>>> fix(pages/index): move subscribe inside gutter
 
 /* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
@@ -110,21 +105,11 @@ const IndexPage = () => (
         <h2 id="contact-us">Contact Us</h2>
         <p>Have questions, feedback, or concerns? Shoot us an email at <a href="mailto:team@slohacks.com">team@slohacks.com!</a></p>
       </section>
-<<<<<<< HEAD
-    </div>
-    <div className={styles.subscribe}>
-      <h2>
-        Interested in attending a future SLO Hacks event? Subscribe to our mailing list!
-      </h2>
-      <ContactForm />
-=======
-      <div className={styles.subscribe}>
-        <h2>
-          Interested in attending a future SLO Hacks event? Subscribe to our mailing list!
-        </h2>
-        <ContactForm/>
-      </div>
->>>>>>> fix(pages/index): move subscribe inside gutter
+      <section className={styles.subscribe}>
+        <h2>Subscribe</h2>
+        <p>Interested in attending a future SLO Hacks event? Subscribe to our mailing list!</p>
+        <ContactForm />
+      </section>
     </div>
   </div>
 );
