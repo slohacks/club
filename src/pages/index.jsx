@@ -77,8 +77,8 @@ const IndexPage = () => (
           <a
             className={styles.brandLink}
             href="http://www.brandmakers.com/"
-           >
-            <img 
+          >
+            <img
               src={brandmakers}
               alt="Brandmakers"
               className={styles.brandmakers}
