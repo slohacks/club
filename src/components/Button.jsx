@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Button.module.css';
 
+/* eslint-disable react/require-default-props */
 const LinkButton = props => (
   <a
     href={props.href}
@@ -33,6 +34,17 @@ const Button = props => (
     ? <LinkButton name={props.name} href={props.href} disabled={props.disabled} />
     : <NonLinkButton name={props.name} disabled={props.disabled} />
 );
+
+LinkButton.propTypes = {
+  name: PropTypes.string.isRequired,
+  href: PropTypes.string,
+  disabled: PropTypes.bool,
+};
+
+NonLinkButton.propTypes = {
+  name: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
+};
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,

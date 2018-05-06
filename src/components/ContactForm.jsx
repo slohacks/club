@@ -13,7 +13,7 @@ class ContactForm extends React.Component {
     emailChange = (event) => {
         this.setState({email: event.target.value});
     }
-
+    
     validateEmail = (email) => {
         const at = email.indexOf( "@" );
         const dot = email.lastIndexOf( "\." );
