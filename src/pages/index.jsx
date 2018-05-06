@@ -4,7 +4,7 @@ import styles from './index.module.css';
 import logo from '../assets/logo.png';
 import firecode from '../assets/firecode.jpg';
 import lhd from '../assets/lhd.jpg';
-import slo_hacks from '../assets/slo_hacks.jpg';
+import sloHacks from '../assets/slo_hacks.jpg';
 import animatedTeam from '../assets/team.gif';
 
 /* eslint-disable react/prop-types, max-len */
@@ -46,18 +46,24 @@ const IndexPage = () => (
         <h2 id="events">Our Events</h2>
         <h3>2017 - 2018</h3>
         <div className={styles.event}>
-          <a href="https://www.slohacks.com/localhackday/"><div className={styles.image_container}>
-            <img className={styles.images} src={lhd} alt="lhd"></img>
-            <h4 className={styles.centered}>Local Hack Day</h4>
-          </div></a>
-          <a href="https://www.slohacks.com/"><div className={styles.image_container}>
-            <img className={styles.images} src={slo_hacks} alt="slo_hacks"></img>
-            <h4 className={styles.centered}>SLO Hacks</h4>
-          </div></a>
-          <a href="https://firecode.slohacks.com"><div className={styles.image_container}>
-            <img className={styles.images} src={firecode} alt="firecode"></img>
-            <h4 className={styles.centered}>Firecode</h4>
-          </div></a>
+          <a href="https://www.slohacks.com/localhackday/">
+            <div className={styles.image_container}>
+              <img className={styles.images} src={lhd} alt="lhd" />
+              <h4 className={styles.centered}>Local Hack Day</h4>
+            </div>
+          </a>
+          <a href="https://www.slohacks.com/">
+            <div className={styles.image_container}>
+              <img className={styles.images} src={sloHacks} alt="slo_hacks" />
+              <h4 className={styles.centered}>SLO Hacks</h4>
+            </div>
+          </a>
+          <a href="https://firecode.slohacks.com">
+            <div className={styles.image_container}>
+              <img className={styles.images} src={firecode} alt="firecode" />
+              <h4 className={styles.centered}>Firecode</h4>
+            </div>
+          </a>
         </div>
         <h3>2018 - 2019</h3>
         <p>Stay tuned!</p>
