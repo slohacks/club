@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Recaptcha from 'react-google-invisible-recaptcha';
-import Button from './Button';
 import styles from './ContactForm.module.css';
+import Button from './Button';
 
 class ContactForm extends React.Component {
     constructor() {

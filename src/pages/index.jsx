@@ -72,7 +72,7 @@ const IndexPage = () => (
         <p>Stay tuned!</p>
       </section>
       <section className={styles.partners}>
-        <h2 id="partners" className={styles.h2}>
+        <h2 className={styles.h2}>
           Our Partners
         </h2>
         <p className={styles.p}>
@@ -113,5 +113,4 @@ const IndexPage = () => (
     </div>
   </div>
 );
-
 export default IndexPage;
