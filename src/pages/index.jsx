@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './index.module.css';
 import logo from '../assets/logo.png';
 import animatedTeam from '../assets/team.gif';
+import oldSlo from '../assets/partners__oldslo.png';
+import brandmakers from '../assets/partners__brandmakers.png';
 
 /* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
@@ -61,6 +63,28 @@ const IndexPage = () => (
         <p className={styles.p}>
           We&apos;re honored to be partnered with some awesome organizations and companies.
         </p>
+        <div className={styles.partnerImages}>
+          <a
+            className={styles.oldLink}
+            href="http://oldsanluisbbq.com/"
+          >
+            <img
+              src={oldSlo}
+              alt="Old SLO BBQ"
+              className={styles.oldSlo}
+            />
+          </a>
+          <a
+            className={styles.brandLink}
+            href="http://www.brandmakers.com/"
+          >
+            <img
+              src={brandmakers}
+              alt="Brandmakers"
+              className={styles.brandmakers}
+            />
+          </a>
+        </div>
       </section>
       <section className={styles.contact}>
         <h2>Contact Us</h2>
