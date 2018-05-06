@@ -35,7 +35,7 @@ const IndexPage = () => (
         className={styles.animatedTeam}
       />
     </header>
-    <div className={styles.window}/>
+    <div className={styles.window} />
     <div className={styles.gutter}>
       <section className={styles.events}>
         <h2>Our Events</h2>
