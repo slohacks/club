@@ -98,41 +98,6 @@
   grid-area: contact;
 }
 
-.partnerImages {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
-  grid-template-rows: 5vh;
-  grid-template-areas: '. oldSlo brandmakers .';
-  padding-bottom: 3vh;
-}
-
-@media all and (min-width: 839px) {
-  .partnerImages {
-    grid-template-columns: 9.58% 15% 15% 50.84% 9.58%;
-    grid-template-rows: 5vh;
-    grid-template-areas: '. oldSlo brandmakers .';
-  }
-}
-
-.oldLink {
-  grid-area: oldSlo;
-}
-
-.oldSlo {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.brandLink {
-  grid-area: brandmakers;
-}
-
-.brandmakers {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 .h1 {
   display: none;
 }
