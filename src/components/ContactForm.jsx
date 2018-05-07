@@ -3,7 +3,7 @@ import Recaptcha from 'react-google-invisible-recaptcha';
 import styles from './ContactForm.module.css';
 import Button from './Button';
 
-/* eslint-disable react/prop-types, max-len */
+
 class ContactForm extends React.Component {
   static validateEmail(email) {
     const at = email.indexOf('@');
@@ -16,6 +16,7 @@ class ContactForm extends React.Component {
              email.indexOf(' ') === -1 &&
              email.indexOf('..') === -1;
   }
+
   constructor() {
     super();
     this.state = { email: '' };
@@ -43,16 +44,28 @@ class ContactForm extends React.Component {
     const { email } = this.state;
     return ContactForm.validateEmail(email);
   }
+
   render() {
     const errorCheck = this.canSubmit();
     return (
       <div>
         <form onSubmit={this.checkFormSubmission}>
           <p>
-            <input className={errorCheck ? null : styles.Error} type="text" value={this.state.email} onChange={this.emailChange} placeholder="Email Address" />
+            <input
+              className={errorCheck ? null : styles.Error}
+              type="text"
+              value={this.state.email}
+              onChange={this.emailChange}
+              placeholder="Email Address"
+            />
           </p>
           <Button name="Submit" disabled={!errorCheck} />
-          <Recaptcha ref={(arg) => { this.recaptcha = arg; }} sitekey="6Lc0a1cUAAAAAIR_1Npm8y81RsAAgJNStGjX-wBR" size="invisible" onResolved={this.onResolved} />
+          <Recaptcha
+            ref={(arg) => { this.recaptcha = arg; }}
+            sitekey="6Lc0a1cUAAAAAIR_1Npm8y81RsAAgJNStGjX-wBR"
+            size="invisible"
+            onResolved={this.onResolved}
+          />
         </form>
       </div>
     );
