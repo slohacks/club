@@ -1,19 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import NavItem from './NavItem.jsx';
+import NavItem from './NavItem';
 import styles from './NavBar.module.css';
 
-class NavBar extends React.Component {
-    render() {
-        return (
-            <nav className="navbar">
-                <NavItem text="Events" url={'#events'}></NavItem>
-                <NavItem text="Partners" url={'#partners'}></NavItem>
-                <NavItem text="Subscribe" url={'#subscribe'}></NavItem>
-                <NavItem text="Contact Us" url={'#contact-us'}></NavItem>
-            </nav>
-        );
-    }
-}
+const NavBar = () => (
+  <nav className={styles.navbar}>
+    <NavItem text="Events" url="#events" />
+    <NavItem text="Partners" url="#partners" />
+    <NavItem text="Subscribe" url="#subscribe" />
+    <NavItem text="Contact Us" url="#contact-us" />
+  </nav>
+);
 
 export default NavBar;
