@@ -6,6 +6,8 @@ import firecode from '../assets/firecode.jpg';
 import lhd from '../assets/lhd.jpg';
 import sloHacks from '../assets/slo_hacks.jpg';
 import animatedTeam from '../assets/team.gif';
+import oldSlo from '../assets/partners__oldslo.png';
+import brandmakers from '../assets/partners__brandmakers.png';
 
 /* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
@@ -75,6 +77,28 @@ const IndexPage = () => (
         <p className={styles.p}>
           We&apos;re honored to be partnered with some awesome organizations and companies.
         </p>
+        <div className={styles.partnerImages}>
+          <a
+            className={styles.oldLink}
+            href="http://oldsanluisbbq.com/"
+          >
+            <img
+              src={oldSlo}
+              alt="Old Slo Barbeque"
+              className={styles.oldSlo}
+            />
+          </a>
+          <a
+            className={styles.brandLink}
+            href="http://www.brandmakers.com/"
+          >
+            <img
+              src={brandmakers}
+              alt="Brandmakers"
+              className={styles.brandmakers}
+            />
+          </a>
+        </div>
       </section>
       <section className={styles.contact}>
         <h2 id="contact-us">Contact Us</h2>
