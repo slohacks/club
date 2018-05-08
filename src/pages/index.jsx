@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from '../components/NavBar';
 import styles from './index.module.css';
 import logo from '../assets/logo.png';
 import animatedTeam from '../assets/team.gif';
@@ -7,6 +8,7 @@ import animatedTeam from '../assets/team.gif';
 const IndexPage = () => (
   <div>
     <header className={styles.hero}>
+      <NavBar />
       <a
         className={styles.logoLink}
         href="/"
@@ -38,7 +40,7 @@ const IndexPage = () => (
     <div className={styles.window} />
     <div className={styles.gutter}>
       <section className={styles.events}>
-        <h2>Our Events</h2>
+        <h2 id="events">Our Events</h2>
         <h3>2017 - 2018</h3>
         <div className={styles.event}>
           <div>
@@ -55,7 +57,7 @@ const IndexPage = () => (
         <p>Stay tuned!</p>
       </section>
       <section className={styles.partners}>
-        <h2 className={styles.h2}>
+        <h2 id="partners" className={styles.h2}>
           Our Partners
         </h2>
         <p className={styles.p}>
@@ -63,7 +65,7 @@ const IndexPage = () => (
         </p>
       </section>
       <section className={styles.contact}>
-        <h2>Contact Us</h2>
+        <h2 id="contact-us">Contact Us</h2>
         <p>Have questions, feedback, or concerns? Shoot us an email at <a href="mailto:team@slohacks.com">team@slohacks.com!</a></p>
       </section>
     </div>
