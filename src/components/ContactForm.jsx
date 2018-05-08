@@ -8,8 +8,8 @@ class ContactForm extends React.Component {
     return re.test(String(email).toLowerCase());
   }
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { email: '' };
     this.emailChange = this.emailChange.bind(this);
   }
