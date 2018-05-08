@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './index.module.css';
 import logo from '../assets/logo.png';
 import animatedTeam from '../assets/team.gif';
+import oldSlo from '../assets/partners__oldslo.png';
+import brandmakers from '../assets/partners__brandmakers.png';
 
 /* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
@@ -35,35 +37,60 @@ const IndexPage = () => (
         className={styles.animatedTeam}
       />
     </header>
-    <section>
-      <h2>Our Events</h2>
-      <h3>2017 - 2018</h3>
-      <div className={styles.event}>
-        <div>
-          <h4>Local Hack Day</h4>
+    <div className={styles.window} />
+    <div className={styles.gutter}>
+      <section className={styles.events}>
+        <h2>Our Events</h2>
+        <h3>2017 - 2018</h3>
+        <div className={styles.event}>
+          <div>
+            <h4>Local Hack Day</h4>
+          </div>
+          <div>
+            <h4>SLO Hacks</h4>
+          </div>
+          <div>
+            <h4>Firecode</h4>
+          </div>
         </div>
-        <div>
-          <h4>SLO Hacks</h4>
+        <h3>2018 - 2019</h3>
+        <p>Stay tuned!</p>
+      </section>
+      <section className={styles.partners}>
+        <h2 className={styles.h2}>
+          Our Partners
+        </h2>
+        <p className={styles.p}>
+          We&apos;re honored to be partnered with some awesome organizations and companies.
+        </p>
+        <div className={styles.partnerImages}>
+          <a
+            className={styles.oldLink}
+            href="http://oldsanluisbbq.com/"
+          >
+            <img
+              src={oldSlo}
+              alt="Old Slo Barbeque"
+              className={styles.oldSlo}
+            />
+          </a>
+          <a
+            className={styles.brandLink}
+            href="http://www.brandmakers.com/"
+          >
+            <img
+              src={brandmakers}
+              alt="Brandmakers"
+              className={styles.brandmakers}
+            />
+          </a>
         </div>
-        <div>
-          <h4>Firecode</h4>
-        </div>
-      </div>
-      <h3>2018 - 2019</h3>
-      <p>Stay tuned!</p>
-    </section>
-    <section className={styles.partners}>
-      <h2 className={styles.h2}>
-        Our Partners
-      </h2>
-      <p className={styles.p}>
-        We&apos;re honored to be partnered with some awesome organizations and companies.
-      </p>
-    </section>
-    <section className={styles.contact}>
-      <h2>Contact Us</h2>
-      <p>Have questions, feedback, or concerns? Shoot us an email at <a href="mailto:team@slohacks.com">team@slohacks.com!</a></p>
-    </section>
+      </section>
+      <section className={styles.contact}>
+        <h2>Contact Us</h2>
+        <p>Have questions, feedback, or concerns? Shoot us an email at <a href="mailto:team@slohacks.com">team@slohacks.com!</a></p>
+      </section>
+    </div>
   </div>
 );
 
