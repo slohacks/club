@@ -10,7 +10,6 @@ import oldSlo from '../assets/partners__oldslo.png';
 import brandmakers from '../assets/partners__brandmakers.png';
 import ContactForm from '../components/ContactForm';
 
-/* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
   <div>
     <header className={styles.hero}>
