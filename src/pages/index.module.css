@@ -104,7 +104,14 @@
 
 .event {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+}
+
+@media all and (min-width: 839px) {
+  .event {
+    flex-direction: row;
+  }
 }
 
 .image_container {
@@ -114,12 +121,23 @@
 
 .images {
   width: 90%;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.24);
   border-radius: 1.5em;
   overflow: hidden;
+  transition: all 1s;
 }
 
-.centered {
+@media all and (min-width: 839px) {
+  .images {
+    width: 80%
+  }
+}
+
+.images:hover {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.event_name {
+  color: #FFF;
   position: absolute;
   top: 50%;
   left: 50%;

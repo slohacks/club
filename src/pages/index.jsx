@@ -49,19 +49,19 @@ const IndexPage = () => (
           <a href="https://www.slohacks.com/localhackday/">
             <div className={styles.image_container}>
               <img className={styles.images} src={lhd} alt="lhd" />
-              <h4 className={styles.centered}>Local Hack Day</h4>
+              <h4 className={styles.event_name}>Local Hack Day</h4>
             </div>
           </a>
           <a href="https://www.slohacks.com/">
             <div className={styles.image_container}>
               <img className={styles.images} src={sloHacks} alt="slo_hacks" />
-              <h4 className={styles.centered}>SLO Hacks</h4>
+              <h4 className={styles.event_name}>SLO Hacks</h4>
             </div>
           </a>
           <a href="https://firecode.slohacks.com">
             <div className={styles.image_container}>
               <img className={styles.images} src={firecode} alt="firecode" />
-              <h4 className={styles.centered}>Firecode</h4>
+              <h4 className={styles.event_name}>Firecode</h4>
             </div>
           </a>
         </div>
