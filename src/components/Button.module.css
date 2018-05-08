@@ -22,13 +22,13 @@
   cursor: pointer;
 }
 
-.button:disabled {
+.Button:disabled {
   color: #465A64;
   background-color: #FFF;
   border-color: #465A64;
 }
 
-.button:hover:disabled {
+.Button:hover:disabled {
   color: #FFF;
   background-color: #465A64;
   border-color: #465A64;
