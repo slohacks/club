@@ -1,3 +1,11 @@
 .navitem {
   background: transparent;
+  color: #465A64;
+  text-decoration: none;
+  padding: 0 0.5em;
+}
+
+.navitem:hover {
+  color: #0F96F5;
+  text-decoration: none;
 }

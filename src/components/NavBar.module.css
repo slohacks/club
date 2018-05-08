@@ -1,3 +1,13 @@
 .navbar {
-  grid-area: navbar;
+  display: none;
+}
+
+@media all and (min-width: 839px) {
+  .navbar {
+    grid-area: navbar;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
