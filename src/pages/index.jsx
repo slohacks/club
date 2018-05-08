@@ -2,6 +2,9 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import styles from './index.module.css';
 import logo from '../assets/logo.png';
+import firecode from '../assets/firecode.jpg';
+import lhd from '../assets/lhd.jpg';
+import sloHacks from '../assets/slo_hacks.jpg';
 import animatedTeam from '../assets/team.gif';
 
 /* eslint-disable react/prop-types, max-len */
@@ -43,15 +46,24 @@ const IndexPage = () => (
         <h2 id="events">Our Events</h2>
         <h3>2017 - 2018</h3>
         <div className={styles.event}>
-          <div>
-            <h4>Local Hack Day</h4>
-          </div>
-          <div>
-            <h4>SLO Hacks</h4>
-          </div>
-          <div>
-            <h4>Firecode</h4>
-          </div>
+          <a href="https://www.slohacks.com/localhackday/">
+            <div className={styles.image_container}>
+              <img className={styles.images} src={lhd} alt="lhd" />
+              <h4 className={styles.event_name}>Local Hack Day</h4>
+            </div>
+          </a>
+          <a href="https://www.slohacks.com/">
+            <div className={styles.image_container}>
+              <img className={styles.images} src={sloHacks} alt="slo_hacks" />
+              <h4 className={styles.event_name}>SLO Hacks</h4>
+            </div>
+          </a>
+          <a href="https://firecode.slohacks.com">
+            <div className={styles.image_container}>
+              <img className={styles.images} src={firecode} alt="firecode" />
+              <h4 className={styles.event_name}>Firecode</h4>
+            </div>
+          </a>
         </div>
         <h3>2018 - 2019</h3>
         <p>Stay tuned!</p>
