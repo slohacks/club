@@ -38,11 +38,7 @@
     "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "gh-pages": "gatsby build --prefix-paths && gh-pages -d public",
-<<<<<<< HEAD
     "lint": "./node_modules/.bin/eslint src/**/*.js*; stylelint \"src/**/*.css\"  --aei",
-=======
-    "lint": "eslint src/; stylelint \"src/**/*.css\" --aei --fix ",
->>>>>>> feat(package.json yarn.lock): staging package.json, yarn.lock before merge
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
