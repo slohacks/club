@@ -6,8 +6,8 @@ const NavBar = () => (
   <nav className={styles.navbar}>
     <NavItem text="Events" url="#events" />
     <NavItem text="Partners" url="#partners" />
-    <NavItem text="Subscribe" url="#subscribe" />
     <NavItem text="Contact Us" url="#contact-us" />
+    <NavItem text="Subscribe" url="#subscribe" />
   </nav>
 );
 

@@ -71,9 +71,7 @@ const IndexPage = () => (
         <p>Stay tuned!</p>
       </section>
       <section className={styles.partners}>
-        <h2 className={styles.h2}>
-          Our Partners
-        </h2>
+        <h2 id="partners" className={styles.h2}>Our Partners</h2>
         <p className={styles.p}>
           We&apos;re honored to be partnered with some awesome organizations and companies.
         </p>
@@ -105,7 +103,7 @@ const IndexPage = () => (
         <p>Have questions, feedback, or concerns? Shoot us an email at <a href="mailto:team@slohacks.com">team@slohacks.com!</a></p>
       </section>
       <section className={styles.subscribe}>
-        <h2>Subscribe</h2>
+        <h2 id="subscribe">Subscribe</h2>
         <p>Interested in attending a future SLO Hacks event? Subscribe to our mailing list!</p>
         <ContactForm />
       </section>

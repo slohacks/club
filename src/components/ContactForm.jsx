@@ -4,19 +4,12 @@ import Button from './Button';
 
 class ContactForm extends React.Component {
   static validateEmail(email) {
-    const at = email.indexOf('@');
-    const dot = email.lastIndexOf('.');
-    return email.length > 0 &&
-             at > 0 &&
-             dot > at + 1 &&
-             dot < email.length &&
-             email[at + 1] !== '.' &&
-             email.indexOf(' ') === -1 &&
-             email.indexOf('..') === -1;
+    const re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+    return re.test(String(email).toLowerCase());
   }
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { email: '' };
     this.emailChange = this.emailChange.bind(this);
   }
