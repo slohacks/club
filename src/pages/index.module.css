@@ -99,24 +99,33 @@
 }
 
 .partnerImages {
-  width: 80vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5vh;
-  grid-template-areas: 'oldSlo brandmakers';
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0% 0% 3%;
+}
+
+.partnerImages a {
+  padding: 0 1em;
 }
 
 @media all and (min-width: 839px) {
   .partnerImages {
-    grid-template-columns: 15% 15%;
-    grid-template-rows: 5vh;
-    grid-template-areas: 'oldSlo brandmakers';
+    flex-direction: row;
   }
 }
 
 .oldLink {
-  grid-area: oldSlo;
+  height: auto;
+  width: 85%
+}
+
+@media all and (min-width: 839px) {
+  .oldLink {
+    height: 12vh;
+    width: auto;
+  }
 }
 
 .oldSlo {
@@ -125,7 +134,15 @@
 }
 
 .brandLink {
-  grid-area: brandmakers;
+  height: auto;
+  width: 90%;
+}
+
+@media all and (min-width: 839px) {
+  .brandLink {
+    height: 8vh;
+    width: auto;
+  }
 }
 
 .brandmakers {
