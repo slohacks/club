@@ -1,14 +1,14 @@
 import React from 'react';
+import NavBar from '../components/NavBar.jsx';
 import styles from './index.module.css';
 import logo from '../assets/logo.png';
 import animatedTeam from '../assets/team.gif';
-import NavBar from '../components/NavBar.jsx'
 
 /* eslint-disable react/prop-types, max-len */
 const IndexPage = () => (
   <div>
     <header className={styles.hero}>
-      <NavBar></NavBar>    
+      <NavBar />    
       <a
         className={styles.logoLink}
         href="/"
