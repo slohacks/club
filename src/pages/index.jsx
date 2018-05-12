@@ -32,8 +32,8 @@ const IndexPage = () => (
           SLO Hacks is a club at Cal Poly SLO that hosts quarterly hackathons.
           Hackathons are coding events that range anywhere from 12-36 hours,
           and give students time to build anything they can think of.
-          Our evenets have reached 300 students in its first year, and we aim
-          to reach much, much more.
+          Our events have reached 300 students in its first year, and we aim
+          to reach many, many more.
         </p>
       </div>
       <img
